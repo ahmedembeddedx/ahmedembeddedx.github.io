@@ -1,0 +1,55 @@
+body 
+{
+    font-family: monospace;
+    background-color: lavender;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: justify;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    background-color: lavender;
+    padding: 10px;
+    z-index: 1;
+}
+
+.innerheader {
+    display: flex;
+    align-items:center;
+}
+
+.pfp {
+    height: 300px;
+    border-radius: 50%;
+}
+
+.general_text {
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+pre { 
+    font-size: 15px;
+}
+
+.links {
+    color: black;
+    font-weight: bold;
+}
+.quotes
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 400px; 
+    margin: 0;
+    line-height: 0.0;
+
+}
+h2
+{
+    font-weight: bold;
+}
