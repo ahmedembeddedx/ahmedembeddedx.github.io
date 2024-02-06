@@ -1,30 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio Website</title>
+    <title>Portfolio Website</title>
     <style>
-        body {
+        body 
+        {
             font-family: monospace;
             background-color: lavender;
-            margin: 10px;
-            padding: 10px;
-            text-align:justify
+            margin-right: 25px;
+            margin-left: 25px;
+            text-align: justify;
         }
         
         .header {
-            text-align: left;
-            /* position: sticky; 
-            top: 0; */
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
             background-color: lavender;
-            padding-top: 10px;
+            padding: 10px;
             z-index: 1;
         }
 
-        .pfp 
-        {
-            height: 250px;
+        .innerheader {
+            display: flex;
+            align-items:center;
+        }
+
+        .pfp {
+            height: 300px;
+            border-radius: 50%;
         }
 
         .general_text {
@@ -32,45 +40,71 @@
             text-align: center;
             padding-bottom: 10px;
         }
-        .pre_text
-        {
+
+        pre { 
             font-size: 15px;
         }
-        .links
-        {
+
+        .links {
             color: black;
         }
+        .quotes
+        {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 300px; 
+            margin: 0;
+        }
+
     </style>
 </head>
 
 <body>
+   
     <div class="header">
-        <div>
-            <h1  style="display: inline-flex;">Ahmed Abdullah</h1>
-            <img src="img.png"pfp" class="pfp" style="display: inline-flex;">
+        <div class="innerheader">
+            <h1 class="quotes">"</h1>
         </div>
-        <b class="pre_text" style="display: inline-block;">
-            <p>
-                Data Scientist <a href="http://algofig.com/" class="links">@AlgoFig</a>
-                <br>
-                Student <a href="https://lhr.nu.edu.pk/" class="links">@FAST-NUCES</a>, Lahore
-                <br>
-                Open-Source Contributor in Data, AI and Machine Learning
-            </p>
+        <div class="innerheader">
+            <img src="img.png" alt="Profile Picture" class="pfp">
+        </div>
+    </div>
+    <pre style="font-size: 40px;">Ahmed Abdullah
+        <pre>
+Data Scientist <a href="http://algofig.com/" class="links">@AlgoFig</a>
 
-            <p style="text-align: right;">
-                <a href="https://github.com/ahmedembeddedx/" class="links">@Github</a>
-                <br>
-                <a href="https://www.linkedin.com/in/ahmedembedded" class="links">@LinkedIn</a>
-                <br>
-                <a href="mailto:business.ahmadabdullah@gmail.com" class="links">@MailTo</a>
-            </p>
-        </b>    
-        <hr>
+Student <a href="https://lhr.nu.edu.pk/" class="links">@FAST-NUCES</a>, Lahore
+
+Open-Source Contributor in Data, AI and Machine Learning
+
+<b><a href="https://github.com/ahmedembeddedx/" class="links">@Github</a>
+
+<a href="https://www.linkedin.com/in/ahmedembedded" class="links">@LinkedIn</a>
+
+<a href="mailto:business.ahmadabdullah@gmail.com" class="links">@MailTo</a></b>
+        </pre>
+    </pre>
+
+    <hr>    
+    <div class="header">
+        <h2>
+            Professional Experience
+        </h2>
+    </div>
+    <div class="header">
+        <h2>
+            Projects
+        </h2>
+    </div>    <div class="header">
+        <h2>
+            Achievements
+        </h2>
+    </div>    <div class="header">
+        <h2>
+            Skills
+        </h2>
     </div>
 
-
-
-    
+    <h1 class="quotes" style="text-align: right;">"</h1>
 </body>
 </html>
+
