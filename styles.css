@@ -23,7 +23,7 @@ body
 
 .pfp {
     height: 400px;
-    margin-top: 100px;
+
     border-radius: 50%;
 }
 
@@ -33,7 +33,7 @@ body
     padding-bottom: 10px;
 }
 
-pre { 
+p { 
     font-size: 15px;
     color: black;
 }
@@ -53,4 +53,37 @@ pre {
 h2
 {
     font-weight: bold;
+}
+
+.spinner
+{
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+    border: 10px solid lavender;
+    animation: spin 3s infinite;
+    margin: 20px;
+    border-radius: 50%;
+}
+.spinner:hover
+{
+    animation: none;
+}
+
+@keyframes spin
+{
+    0%
+    {
+        transform: rotate(-2deg);
+    }
+    50%
+    {
+        transform: rotate(2deg);
+    }
+    100%
+    {
+        transform: rotate(-2deg);   
+    }
+
+
 }
