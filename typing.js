@@ -33,3 +33,21 @@ window.onload = function() {
     document.getElementById("demo").innerHTML = txt[0]; // Print the first character immediately
     typeWriter();
 };
+
+
+function toggleMode() {
+  var dayMode = document.getElementById('day-mode');
+  if (dayMode.getAttribute('href') === 'styles_d.css') {
+      dayMode.setAttribute('href', 'styles_n.css');
+  } else {
+      dayMode.setAttribute('href', 'styles_d.css');
+  }
+  // Adding transition effect
+  dayMode.onload = function() {
+      dayMode.style.transition = "opacity 1s ease-in-out";
+      dayMode.style.opacity = "0";
+      setTimeout(function() {
+          dayMode.style.opacity = "1";
+      }, 100);
+  };
+}
