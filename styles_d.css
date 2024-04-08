@@ -12,6 +12,26 @@ body
     src: url(FiraCode-SemiBold.ttf);
 }
 
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    background-color: lavender;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
 
 
 .toggle_button
@@ -154,4 +174,18 @@ h3
     {
         transform: rotate(-2deg);   
     }
+}
+
+footer {
+    text-align: center; /* Center-align the content */
+    padding: 20px; /* Add padding to the entire footer */
+    background-color: #f0f0f0; /* Add a background color */
+}
+
+.footer-content {
+    display: inline-block; /* Ensure the content is centered */
+}
+
+.social-icons img {
+    margin: 5px; /* Add some space between the icons */
 }
